@@ -1,0 +1,41 @@
+/*----------------------------------------
+double Triangle connect head each other
+ of *
+ 
+     * * * * *
+      * * * *
+       * * *
+        * *
+         *
+         *
+        * *
+       * * *
+      * * * *
+     * * * * *
+------------------------------------------*/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n,s, row,col;
+    cout<<"Enter the number of rows: ";
+    cin>>n;
+
+    for(row=1; row<=n*2; row++)
+    {
+    int sp =n<row ? n*2-row+1: row;
+        for(s=1;s<=sp; s++)
+        {
+            cout<<" ";
+        }
+    int c=n<row ?row-n : n-row+1;
+        for(col=1; col<=c; col++)
+        {
+            cout<<"* ";
+        }
+        cout<<endl;
+    }
+    
+    return 0;
+}
