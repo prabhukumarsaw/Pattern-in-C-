@@ -1,0 +1,36 @@
+/*
+Pattern 3: Half Pyramid of Alphabets
+
+A
+B B
+C C C
+D D D D
+E E E E E
+
+*/
+
+
+/*Pattern Half Pyramid of Alphabets*/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i, j;
+    char input, alphabet = 'A';
+
+    cout<<"Enter an uppercase char: ";
+    cin>>input;
+
+    for(i=1;i<=(input-'A'+1); i++)
+    {
+        for(j=1;j<=i; j++)
+        {
+            cout<<alphabet<<" ";
+        }
+        alphabet++;
+        cout<<endl;
+    }
+    
+    return 0;
+}
