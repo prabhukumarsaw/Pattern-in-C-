@@ -1,0 +1,31 @@
+/*Pattern 2: Half Pyramid of Numbers
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+
+*/
+
+
+/*Print Half Pyramid of Numbers */
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout<<"enter number to print: ";
+    cin>>n;
+
+    for(int row=1; row<=n;row++)
+    {
+        for(int col=1; col<=row; col++)
+        {
+            cout<<col<<" ";
+        }
+        cout<<endl;
+    }
+    
+    return 0;
+}
