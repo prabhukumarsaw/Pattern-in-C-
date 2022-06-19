@@ -1,0 +1,35 @@
+
+/*
+Pattern 6: right Half Pyramid of * 
+
+         *
+        **
+       ***
+      ****
+     *****
+
+*/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n,s, row,col;
+    cout<<"enter number to print: ";
+    cin>>n;
+
+    for(row=1; row<=n; row++)
+    {
+        for(s=1; s<=n-row; s++)
+        {
+            cout<<" ";
+        }
+        for(col=1; col<=row; col++)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    
+    return 0;
+}
