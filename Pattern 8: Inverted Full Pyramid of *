@@ -1,1 +1,34 @@
+/*----------------------------------------
+Pattern of Inverted Full Pyramid of *
 
+    *********
+     *******
+      *****
+       ***
+        *
+------------------------------------------*/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n,s, row,col;
+    cout<<"Enter the number of rows: ";
+    cin>>n;
+
+    for(row=1; row<=n; row++)
+    {
+        //count space
+        for(s=1; s<=row; s++)
+        {
+            cout<<" ";
+        }
+        for(col=1; col<=(2*(n-row)-1); col++)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    
+    return 0;
+}
